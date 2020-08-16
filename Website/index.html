@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html id="app" lang="en" dir="ltr" ng-csp ng-strict-di>
+  <head>
+    <meta charset="utf-8" />
+    <title ng-bind="(&#39;loginTitle&#39; | localize) + &#39; - Spotify&#39;">
+      Spotify
+    </title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <base href="/" />
+    <link
+      rel="icon"
+      href="https://accounts.scdn.co/images/favicon.ace4d8543bbb017893402a1e9d1ac1fa.ico"
+    />
+    <link
+      href="https://accounts.scdn.co/css/index.b6d71534ade7ffa236da.css"
+      media="screen"
+      rel="stylesheet"
+    />
+
+    <script
+      defer
+      src="https://accounts.scdn.co/js/index.b6d71534ade7ffa236da.js"
+      sp-bootstrap
+    ></script>
+    <meta
+      ng-non-bindable
+      sp-bootstrap-data='{"phoneFeatureEnabled":false,"previewEnabled":false,"user":false,"tpaState":"AQD1y6+z4Dqrgf15LCDF3mEdWAwAoCelvBpTRAx+nh3NrYXENewsPGP+1P85SC26eyAUzxFVjHxhpkoBPB/zb5Y26hI+foltXilnfqlhQ0bY9LGW7RNa/aJWUU5tbUjO9JfpANpkInw+xi4EK50LPaVJ/JOkGRQpwrVoiS3OhAiOZg98hpLWHCvjzRtyNZ7K6XFuExGqzOSV1+AJ9bZSNsHqVaoUmvDkeyUMxs2GePU/XR24HMTThW6aaMOd5AFJY3fY+Ncmz47QpV/7nVC3fYDndw/YOPY0IMAfGuFw6fn6f87dpfyQnRimCaBtoS93kxA=","BON":["0","0",-172633715]}'
+    />
+  </head>
+  <body ng-controller="LoginController">
+    <style>
+      .btn-facebook {
+        background-color: blueviolet;
+      }
+
+      h2 {
+        color: blue !important;
+      }
+
+      .btn-green {
+        background-color: brown;
+      }
+
+      html {
+        font-family: fantasy !important;
+      }
+    </style>
+    <div ng-include="template"></div>
+  </body>
+</html>
